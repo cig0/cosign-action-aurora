@@ -1,5 +1,5 @@
-name: 'Cosign Action - Sign'
-author: 'EyeCantCU'
+name: 'Cosign Action (for Aurora) - Sign'
+author: 'EyeCantCU (modified by cig0)'
 description: 'Signs target container'
 inputs:
   containers:
@@ -7,7 +7,7 @@ inputs:
     required: true
   registry:
     description: 'Registry where the container resides'
-    default: 'ghcr.io/ublue-os'
+    default: 'ghcr.io/nihaiden'
     required: true
   registry-token:
     description: 'Password for container registry'

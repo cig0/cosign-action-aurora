@@ -1,5 +1,5 @@
-name: 'Cosign Action - Verify'
-author: 'EyeCantCU'
+name: 'Cosign Action (for Aurora) - Verify'
+author: 'EyeCantCU (modified by cig0)'
 description: 'Verifies target container'
 inputs:
   cert-identity:
@@ -14,14 +14,14 @@ inputs:
     required: false
   pubkey:
     description: 'Public key used by target container'
-    default: 'https://raw.githubusercontent.com/ublue-os/main/main/cosign.pub'
+    default: 'https://raw.githubusercontent.com/NiHaiden/aurora/main/cosign.pub'
     required: false
   oidc-issuer:
     description: 'The certificate OIDC issuer'
     required: false
   registry:
     description: 'Registry where the container resides'
-    default: 'ghcr.io/ublue-os'
+    default: 'ghcr.io/nihaiden'
     required: true
 runs:
   using: "composite"
